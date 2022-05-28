@@ -41,7 +41,7 @@ The images used here are my own and I am doing this for a uni project. The image
 </p>
 <br/>
 <p align="center">
- <img src="/assets/images/screenshots/02.png"/>
+ <img src="/assets/images/screenshots/03.png"/>
 </p>
 
 ## USAGE :hammer:
