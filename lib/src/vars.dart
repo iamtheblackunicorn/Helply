@@ -12,10 +12,14 @@ String stdFont = 'PSB';
 String appTitle = 'Helply';
 
 /// Main colors.
-Color mainColor = Color(0xFFEA1573);
+Color mainColor = Color(0xFFFFFFFF);
 Color accentColor = Color(0xFF000000);
-Color gradientColor = Color(0xFFFF7BAC);
-Color tertiaryColor = Color(0xFFFFFFFF);
+Color tertiaryColor = mainColor;
+
+/// Colors for the gradient on the [Home]
+/// widget.
+Color gradientColorOne = Color(0xFFFF7BAC);
+Color gradientColorTwo = Color(0xFFEA1573);
 
 /// Numeric and floating-point
 /// layout variables.

@@ -10,11 +10,41 @@
 
 This project is a small low-fidelity prototype of a small app to help to refugees get resources they might need. This includes food, medication, a place to sleep, and anything else they might need.
 
-## !!!:warning:wARNING:warning:!!!
+## :warning:!!!WARNING!!!:warning:
 
-***!!:warning:THIS IS STRICTLY A PROTOTYPE AND DOESN'T REPRESENT A USABLE PRODUCT!:warning:!!***
+***:warning:!!THIS IS STRICTLY A PROTOTYPE AND DOESN'T REPRESENT A USABLE PRODUCT!!:warning:***
 
-## Usage :hammer:
+## LAYOUT :nail_care:
+
+This app has three screens.
+
+- The first screen has some text to prompt the user to speak. A refugee would ask for help here by pressing the microphone button.
+- The second screen would pop up when offers for the user's query are found. These offers are shown with an image and a title. The image used in the app is a ***PLACEHOLDER***.
+- When the user clicks on one of the offers, more information is shown about the facility.
+
+## DOWNLOADS :brain:
+
+- Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
+
+## DISCLAIMER :warning:
+
+The images used here are my own and I am doing this for a uni project. The images in the app are strictly placeholders! The design and color scheme is also strictly prototypical!
+
+## SCREENSHOTS :camera_flash:
+
+<p align="center">
+ <img src="/assets/images/screenshots/01.png"/>
+</p>
+<br/>
+<p align="center">
+ <img src="/assets/images/screenshots/02.png"/>
+</p>
+<br/>
+<p align="center">
+ <img src="/assets/images/screenshots/02.png"/>
+</p>
+
+## USAGE :hammer:
 
 To use the app, you need to take a couple of steps.
 
@@ -73,18 +103,6 @@ If you're compiling for Android, you will need a Java Keystore. You can generate
 $ keytool -genkey -v -keystore key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
 ```
 Please note to execute this and move the file `key.jks` to `android/app`.
-
-## LAYOUT :nail_care:
-
-This app has three screens.
-
-- The first screen has some text to prompt the user to speak. A refugee would ask for help here by pressing the microphone button.
-- The second screen would pop up when offers for the user's query are found. These offers are shown with an image and a title. The image used in the app is a ***PLACEHOLDER***.
-- When the user clicks on one of the offers, more information is shown about the facility.
-
-## DISCLAIMER :warning:
-
-The images used here are my own and I am doing this for a uni project. The images in the app are strictly placeholders! The design and color scheme is also strictly prototypical!
 
 ## NOTE :scroll:
 

@@ -20,8 +20,8 @@ class Home extends StatelessWidget {
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [
-              gradientColor,
-              mainColor
+              gradientColorOne,
+              gradientColorTwo
             ]
           ),
         ),
