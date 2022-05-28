@@ -21,7 +21,7 @@ To use the app, you need to take a couple of steps.
 - Compile the app from source.
 - Run it.
 
-## Copmpiling from source :inbox_tray:
+## Compiling from source :inbox_tray:
 
 To compile this project, you will need the following resources:
 
