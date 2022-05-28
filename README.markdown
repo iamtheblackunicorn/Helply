@@ -29,6 +29,7 @@ To compile this project, you will need the following resources:
 - For all platforms: [The Dart compiler](https://dart.dev)
 - For all platforms: [Git VCS](https://git-scm.com/downloads)
 - For Android: [The Android SDK](https://developer.android.com/)
+- For Android: [The Java JDK](https://www.oracle.com/java/technologies/downloads/)
 - For Mac OSX: [XCode](https://developer.apple.com/xcode/)
 
 After you have installed these tools, open a command prompt and type the following command, to ensure everything is installed:
