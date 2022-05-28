@@ -25,6 +25,8 @@ This app has three screens.
 ## DOWNLOADS :brain:
 
 - Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
+- For Mac OSX: Download the bundle and unzip it. Then double-click the executable.
+- For the web: Download the bundle and unzip it. Start a server on `localhost` and open a brower at that address.
 
 ## DISCLAIMER :warning:
 
