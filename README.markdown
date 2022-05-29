@@ -26,7 +26,15 @@ This app has three screens.
 
 - Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
 - For Mac OSX: Download the bundle and unzip it. Then double-click the executable.
-- For the web: Download the bundle and unzip it. Start a server on `localhost` and open a brower at that address.
+- For the web: Download the bundle and unzip it. Start a server on `localhost` and open a brower at that address. Starting a server can be done from the command line using [this project](https://github.com/iamtheblackunicorn/rins). If you have installed ***RINS***, change into the downloaded directory and run this command: `rins -s .`.
+
+## SUPPORTED PLATFORMS :computer:
+
+Helply's supported platforms include the following:
+
+- Mac OSX
+- Android
+- Web
 
 ## DISCLAIMER :warning:
 
