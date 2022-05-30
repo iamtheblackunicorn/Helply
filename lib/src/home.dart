@@ -7,6 +7,7 @@ Licensed under the MIT license.
 
 import 'vars.dart';
 import 'help.dart';
+import 'data.dart';
 import 'package:flutter/material.dart';
 
 /// This class is the entry point for the
@@ -67,7 +68,9 @@ class Home extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HelpNavigator()
+                        builder: (context) => HelpNavigator(
+                          apiStorage: APIStorage()
+                        )
                       ),
                     );
                   },

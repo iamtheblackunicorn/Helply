@@ -43,8 +43,8 @@ class InfoCard extends StatelessWidget {
               children: <Widget> [
                 new ClipRRect(
                   borderRadius: BorderRadius.circular(stdRounding),
-                  child: Image.asset(
-                    '$imageUrl',
+                  child: Image.network(
+                    imageUrl,
                     height: imageSize,
                     width: double.infinity,
                     fit: BoxFit.cover,
@@ -63,7 +63,7 @@ class InfoCard extends StatelessWidget {
                     child: Text(
                       '$title',
                       style: TextStyle(
-                        color: accentColor,
+                        color: mainColor,
                         fontWeight: FontWeight.bold,
                         fontSize: stdFontSize,
                         fontFamily: stdFont

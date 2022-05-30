@@ -5,6 +5,7 @@ a.k.a. Angeldust Duke.
 Licensed under the MIT license.
 */
 
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 /// App-wide variables.
@@ -40,15 +41,12 @@ double specialPadding = 30.0;
 
 /// Dummy data for the prototype
 /// to display and illustrate possible use.
-int itemCount = 5;
+Dio dio = new Dio();
 String isOpen = 'Yes';
 String openKey = 'Open';
-String prefix = 'Offer';
 String telNumKey = 'Tel.';
 String stdTitle = 'Offers';
 String addressKey = 'Address';
-String number = '+4366412344556';
 String loadingMessage = 'Loading!';
 String stdPrompt = 'Say something.';
-String address = 'Michael Meierweg 12A';
-String imageUrl = 'assets/images/banner/banner.png';
+String apiUrl = 'https://blckunicorn.art/assets/json/refugees.json';

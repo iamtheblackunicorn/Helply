@@ -5,68 +5,60 @@ a.k.a. Angeldust Duke.
 Licensed under the MIT license.
 */
 
+import 'list.dart';
 import 'vars.dart';
-import 'info.dart';
-import 'detail.dart';
+import 'data.dart';
+import 'error.dart';
+import 'loading.dart';
 import 'package:flutter/material.dart';
 
 /// The listview for users to scroll through
 /// and choose a facility or offer from.
-class HelpNavigator extends StatelessWidget {
+/// Relies on asynchronous data, might show
+/// an error if the data cannot be retrieved.
+class HelpNavigator extends StatefulWidget{
+  final APIStorage apiStorage;
+  HelpNavigator({
+    Key? key,
+    required this.apiStorage
+  }) : super(key: key);
+  @override
+  HelpNavigatorState createState() => HelpNavigatorState();
+
+}
+class HelpNavigatorState extends State<HelpNavigator> {
+  late Future<Map<String, dynamic>> api;
+  @override
+  void initState(){
+    super.initState();
+    api = widget.apiStorage.readData();
+  }
   @override
   Widget build(BuildContext context){
-    return Scaffold(
-      backgroundColor: accentColor,
-      appBar: new AppBar(
-        foregroundColor: accentColor,
-        backgroundColor: mainColor,
-        centerTitle: isSo,
-        title: new Text(
-          stdTitle,
-          style: new TextStyle(
-            fontSize: stdFontSize,
-            color: accentColor,
-            fontFamily: stdFont
-          )
-        ),
-        leading: new IconButton(
-            icon: Icon(
-              Icons.arrow_back,
-              color: accentColor,
-              size: iconSize
-            ),
-            onPressed:() => Navigator.of(context).pop()
-          ),
-      ),
-      body: new SingleChildScrollView(
-        child:new Center(
-          child:new ListView.builder(
-            shrinkWrap: isSo,
-            itemCount: itemCount,
-            itemBuilder: (context, index){
-              return InfoCard(
-                title: '$prefix ${index+1}',
-                imageUrl: imageUrl,
-                address: address,
-                telNumber: number,
-                navigateTo: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => DetailView(
-                        title: '$prefix ${index+1}',
-                        imageUrl: imageUrl,
-                        address: address,
-                        telNumber: number
-                      )
-                    ),
-                  );
-                }
-              );
-            }
-          )
-        )
-      )
+    /// We return a FutureBuilder to wait for asnychronous data.
+    return FutureBuilder<Map<String, dynamic>>(
+      future: api,
+      builder: (BuildContext context, AsyncSnapshot<Map<String, dynamic>> snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting){
+          /// While the data is loading this is displayed.
+          return Loading();
+        }
+        else {
+          if (snapshot.hasError) {
+            /// If there's an error, this widget is shown.
+            return Error();
+          }
+          else {
+            /// If everything goes to plan, the [Future] is
+            /// nuked and passed to the actual list view.
+            Map<String, dynamic> data = snapshot.data!;
+            return DataListView(
+              data: data
+            );
+          }
+        }
+      }
     );
   }
+
 }

@@ -1,17 +1,16 @@
 name: helply
 description: A small app to get refugess what they need.
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.1.0+2
 environment:
   sdk: ">=2.17.1 <3.0.0"
 dependencies:
   flutter:
     sdk: flutter
   loading_animations: ^2.2.0
+  dio: ^4.0.0
 flutter:
   uses-material-design: true
-  assets:
-     - assets/images/banner/banner.png
   fonts:
      - family: PSB
        fonts:

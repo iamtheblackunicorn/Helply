@@ -65,7 +65,7 @@ class DetailView extends StatelessWidget {
                 children: <Widget> [
                   new ClipRRect(
                     borderRadius: BorderRadius.circular(stdRounding),
-                    child: Image.asset(
+                    child: Image.network(
                       imageUrl,
                       height: imageSize,
                       width: double.infinity,
@@ -85,7 +85,7 @@ class DetailView extends StatelessWidget {
                         child: Text(
                           title,
                           style: TextStyle(
-                            color: accentColor,
+                            color: mainColor,
                             fontWeight: FontWeight.bold,
                             fontSize: stdFontSize,
                             fontFamily: stdFont

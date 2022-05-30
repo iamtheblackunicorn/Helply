@@ -46,13 +46,6 @@ The images used here are my own and I am doing this for a uni project. The image
  <img src="/assets/images/screenshots/01.png"/>
 </p>
 <br/>
-<p align="center">
- <img src="/assets/images/screenshots/02.png"/>
-</p>
-<br/>
-<p align="center">
- <img src="/assets/images/screenshots/03.png"/>
-</p>
 
 ## USAGE :hammer:
 
