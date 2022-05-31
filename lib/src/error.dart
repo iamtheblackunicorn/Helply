@@ -15,7 +15,7 @@ class Error extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return  Scaffold(
-      backgroundColor: accentColor,
+      backgroundColor: mainColor,
       body: Center(
         child: Column(
           children: <Widget> [
@@ -24,7 +24,7 @@ class Error extends StatelessWidget {
             ),
             new Icon(
               Icons.warning,
-              color: mainColor,
+              color: accentColor,
               size: imageSize,
             ),
           ]

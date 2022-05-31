@@ -13,9 +13,8 @@ String stdFont = 'PSB';
 String appTitle = 'Helply';
 
 /// Main colors.
-Color mainColor = Color(0xFFFFFFFF);
-Color accentColor = Color(0xFF000000);
-Color tertiaryColor = mainColor;
+Color mainColor = Color(0xFF000033);
+Color accentColor = Color(0xFF0AFFFF);
 
 /// Colors for the gradient on the [Home]
 /// widget.
@@ -28,6 +27,7 @@ bool isSo = true;
 double offSetOne = 0.2;
 double offSetTwo = 0.8;
 double iconSize = 35.0;
+double lineHeight = 4.0;
 double topOffSet = 60.0;
 double zeroOffset = 0.0;
 double stdPadding = 20.0;
@@ -47,6 +47,9 @@ String openKey = 'Open';
 String telNumKey = 'Tel.';
 String stdTitle = 'Offers';
 String addressKey = 'Address';
-String loadingMessage = 'Loading!';
-String stdPrompt = 'Say something.';
+String stdPrompt = 'What do you need?';
 String apiUrl = 'https://blckunicorn.art/assets/json/refugees.json';
+
+
+/// Miscellaneous variables.
+TextEditingController textController = new TextEditingController();

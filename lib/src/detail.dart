@@ -26,23 +26,23 @@ class DetailView extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: accentColor,
+      backgroundColor: mainColor,
       appBar: new AppBar(
-        foregroundColor: accentColor,
-        backgroundColor: mainColor,
+        foregroundColor: mainColor,
+        backgroundColor: accentColor,
         centerTitle: isSo,
         title: new Text(
           title,
           style: new TextStyle(
             fontSize: stdFontSize,
-            color: accentColor,
+            color: mainColor,
             fontFamily: stdFont
           )
         ),
         leading: new IconButton(
             icon: Icon(
               Icons.arrow_back,
-              color: accentColor,
+              color: mainColor,
               size: iconSize
             ),
             onPressed:() => Navigator.of(context).pop()
@@ -51,11 +51,11 @@ class DetailView extends StatelessWidget {
       body: new Padding(
         padding:EdgeInsets.all(stdPadding),
         child: new Card(
-          color: accentColor,
+          color: mainColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(stdRounding),
             side: new BorderSide(
-              color: mainColor,
+              color: accentColor,
               width: stdBorderWidth,
             ),
           ),
@@ -85,7 +85,7 @@ class DetailView extends StatelessWidget {
                         child: Text(
                           title,
                           style: TextStyle(
-                            color: mainColor,
+                            color: accentColor,
                             fontWeight: FontWeight.bold,
                             fontSize: stdFontSize,
                             fontFamily: stdFont

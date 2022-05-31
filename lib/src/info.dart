@@ -31,13 +31,13 @@ class InfoCard extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(stdRounding),
             side: new BorderSide(
-              color: mainColor,
+              color: accentColor,
               width: stdBorderWidth,
             ),
           ),
           child: new InkWell(
             radius: imageSize,
-            splashColor: mainColor,
+            splashColor: accentColor,
             onTap: navigateTo,
             child: new Stack(
               children: <Widget> [
@@ -63,7 +63,7 @@ class InfoCard extends StatelessWidget {
                     child: Text(
                       '$title',
                       style: TextStyle(
-                        color: mainColor,
+                        color: accentColor,
                         fontWeight: FontWeight.bold,
                         fontSize: stdFontSize,
                         fontFamily: stdFont

@@ -16,7 +16,7 @@ class Loading extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return  Scaffold(
-      backgroundColor: accentColor,
+      backgroundColor: mainColor,
       body: Center(
         child: Column(
           children: <Widget> [
@@ -25,7 +25,7 @@ class Loading extends StatelessWidget {
             ),
             new LoadingBumpingLine.circle(
               size: imageSize,
-              backgroundColor: mainColor,
+              backgroundColor: accentColor,
               duration: Duration(
                 milliseconds: loadingDuration
               )

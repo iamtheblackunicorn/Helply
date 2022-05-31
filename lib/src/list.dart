@@ -20,23 +20,23 @@ class DataListView extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return Scaffold(
-      backgroundColor: accentColor,
+      backgroundColor: mainColor,
       appBar: new AppBar(
-        foregroundColor: accentColor,
-        backgroundColor: mainColor,
+        foregroundColor: mainColor,
+        backgroundColor: accentColor,
         centerTitle: isSo,
         title: new Text(
           stdTitle,
           style: new TextStyle(
             fontSize: stdFontSize,
-            color: accentColor,
+            color: mainColor,
             fontFamily: stdFont
           )
         ),
         leading: new IconButton(
             icon: Icon(
               Icons.arrow_back,
-              color: accentColor,
+              color: mainColor,
               size: iconSize
             ),
             onPressed:() => Navigator.of(context).pop()
@@ -49,7 +49,6 @@ class DataListView extends StatelessWidget{
             itemCount: data.length,
             itemBuilder: (context, index){
               String title = data.keys.elementAt(index);
-              print(data[title]);
               String imageUrl = data[title]['imageUrl']!;
               String address = data[title]['address']!;
               String number = data[title]['telNumber']!;

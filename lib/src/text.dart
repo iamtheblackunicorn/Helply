@@ -29,7 +29,7 @@ class TextWidget extends StatelessWidget {
             '$fieldKey',
             style: new TextStyle(
               fontSize: stdFontSize,
-              color: mainColor,
+              color: accentColor,
               fontFamily: stdFont
             )
           )
@@ -40,7 +40,7 @@ class TextWidget extends StatelessWidget {
             '$fieldValue',
             style: new TextStyle(
               fontSize: stdFontSize,
-              color: mainColor,
+              color: accentColor,
               fontFamily: stdFont
             )
           )
