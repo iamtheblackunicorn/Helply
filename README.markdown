@@ -6,21 +6,30 @@
 
 ***A small app to get refugess what they need.*** :peace_symbol: :tea:
 
-## About :books:
+## ABOUT :books:
 
-This project is a small low-fidelity prototype of a small app to help to refugees get resources they might need. This includes food, medication, a place to sleep, and anything else they might need.
+This project is nearly-complete prototype of a small app to help to refugees get resources they might need. This includes food, medication, a place to sleep, and anything else they might need.
 
-## :warning:!!!WARNING!!!:warning:
+## FEATURES :rocket:
 
-***:warning:!!THIS IS STRICTLY A PROTOTYPE AND DOESN'T REPRESENT A USABLE PRODUCT!!:warning:***
+- Clean layout.
+- Remote API-fetching.
+- Full text-search.
+- Full backend architectute.
+- Full frontend architecture.
+
+## THINGS MISSING :test_tube:
+
+- Access to a remote database with actual help facilities.
 
 ## LAYOUT :nail_care:
 
-This app has three screens.
+This app has four screens.
 
-- The first screen has some text to prompt the user to speak. A refugee would ask for help here by pressing the microphone button.
-- The second screen would pop up when offers for the user's query are found. These offers are shown with an image and a title. The image used in the app is a ***PLACEHOLDER***.
-- When the user clicks on one of the offers, more information is shown about the facility.
+- 1.) The first screen has a text input field to prompt the user to make a query.
+- 2.) The second screen is either a loading screen if the remote database can be queried successfully or an error screen if a connection to the API endpoint cannot be established.
+- 3.) The third screen is a list of all available facilities that match the user's query. If the user types a query that isn't "understood", all facilities are shown.
+- 4.) The fourth screen is a detailed view of the facility if the user taps on one of the facilities in the previous screen.
 
 ## DOWNLOADS :brain:
 
@@ -38,12 +47,24 @@ Helply's supported platforms include the following:
 
 ## DISCLAIMER :warning:
 
-The images used here are my own and I am doing this for a uni project. The images in the app are strictly placeholders! The design and color scheme is also strictly prototypical!
+This product is a nearly-usable prototype, the architecture is identical to that of a usable product, however, the API pulled in for avialble facilities is a *"dummy"* API. (I'm doing this for a uni project.)
 
 ## SCREENSHOTS :camera_flash:
 
 <p align="center">
  <img src="/assets/images/screenshots/01.png"/>
+</p>
+<br/>
+<p align="center">
+ <img src="/assets/images/screenshots/02.png"/>
+</p>
+<br/>
+<p align="center">
+ <img src="/assets/images/screenshots/03.png"/>
+</p>
+<br/>
+<p align="center">
+ <img src="/assets/images/screenshots/04.png"/>
 </p>
 <br/>
 
@@ -90,14 +111,11 @@ $ cd helply
 # To compile for the web.
 $ flutter build web
 
-# To compile for Windows.
-$ flutter build windows
-
 # To compile for Mac OSX.
 $ flutter build macos
 
 # To compile for an Android device.
-$ flutter build android
+$ flutter build apk
 ```
 
 If you're compiling for Android, you will need a Java Keystore. You can generate this with this command:
@@ -106,6 +124,18 @@ If you're compiling for Android, you will need a Java Keystore. You can generate
 $ keytool -genkey -v -keystore key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
 ```
 Please note to execute this and move the file `key.jks` to `android/app`.
+
+## CHANGELOG :black_nib:
+
+### Version 1.0.0
+
+- Basic layout.
+- Basic architecture.
+
+### Version 1.1.0
+
+- Layout and color scheme improved.
+- Functionality upgraded to a near-usable product.
 
 ## NOTE :scroll:
 
