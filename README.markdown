@@ -31,11 +31,16 @@ This app has four screens.
 - 3.) The third screen is a list of all available facilities that match the user's query. If the user types a query that isn't *"understood"*, all facilities are shown.
 - 4.) The fourth screen is a detailed view of the facility if the user taps on one of the facilities in the previous screen.
 
-## DOWNLOADS :brain:
+## INSTALLATION :inbox_tray:
 
-- Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
+Download the bundle for your platform and follow the instructions given in the *"Downloads"* section.
+
+## DOwNLOADS :brain:
+
+Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
 - For Mac OSX: Download the bundle and unzip it. Then double-click the executable.
 - For the web: Download the bundle and unzip it. Start a server on `localhost` and open a browser at that address. Starting a server can be done from the command line using [this project](https://github.com/iamtheblackunicorn/rins). If you have installed ***RINS***, change into the downloaded directory and run this command: `rins -s .`.
+- For Android: Enable the installation of APKs from *"Unknown Sources"*. Download the APK file, find it in your file explorer and tap on it. This should prompt the installation.
 
 ## SUPPORTED PLATFORMS :computer:
 
