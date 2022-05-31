@@ -35,7 +35,7 @@ This app has four screens.
 
 Download the bundle for your platform and follow the instructions given in the *"Downloads"* section.
 
-## DOwNLOADS :brain:
+## DOWNLOADS :brain:
 
 Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
 - For Mac OSX: Download the bundle and unzip it. Then double-click the executable.
