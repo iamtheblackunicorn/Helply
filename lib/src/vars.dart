@@ -45,11 +45,8 @@ Dio dio = new Dio();
 String isOpen = 'Yes';
 String openKey = 'Open';
 String telNumKey = 'Tel.';
+String qualifier = 'tags';
 String stdTitle = 'Offers';
 String addressKey = 'Address';
 String stdPrompt = 'What do you need?';
 String apiUrl = 'https://blckunicorn.art/assets/json/refugees.json';
-
-
-/// Miscellaneous variables.
-TextEditingController textController = new TextEditingController();

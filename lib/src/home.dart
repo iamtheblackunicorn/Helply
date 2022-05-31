@@ -17,6 +17,7 @@ import 'package:flutter/material.dart';
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context){
+    TextEditingController textController = new TextEditingController();
     return Scaffold(
       body: new Container(
         color: mainColor,
@@ -77,7 +78,8 @@ class Home extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => HelpNavigator(
-                          apiStorage: APIStorage()
+                          apiStorage: APIStorage(),
+                          searchTerm: textController.value.text
                         )
                       ),
                     );
