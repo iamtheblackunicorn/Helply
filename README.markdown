@@ -8,14 +8,14 @@
 
 ## ABOUT :books:
 
-This project is nearly-complete prototype of a small app to help to refugees get resources they might need. This includes food, medication, a place to sleep, and anything else they might need.
+This project is a nearly-complete prototype of a small app to help to refugees get resources they might need. This includes food, medication, a place to sleep, and anything else.
 
 ## FEATURES :rocket:
 
 - Clean layout.
 - Remote API-fetching.
 - Full text-search.
-- Full backend architectute.
+- Full backend architecture.
 - Full frontend architecture.
 
 ## THINGS MISSING :test_tube:
@@ -28,14 +28,14 @@ This app has four screens.
 
 - 1.) The first screen has a text input field to prompt the user to make a query.
 - 2.) The second screen is either a loading screen if the remote database can be queried successfully or an error screen if a connection to the API endpoint cannot be established.
-- 3.) The third screen is a list of all available facilities that match the user's query. If the user types a query that isn't "understood", all facilities are shown.
+- 3.) The third screen is a list of all available facilities that match the user's query. If the user types a query that isn't *"understood"*, all facilities are shown.
 - 4.) The fourth screen is a detailed view of the facility if the user taps on one of the facilities in the previous screen.
 
 ## DOWNLOADS :brain:
 
 - Please check the `Releases` section of this repository or [follow this link](https://github.com/iamtheblackunicorn/Helply/releases).
 - For Mac OSX: Download the bundle and unzip it. Then double-click the executable.
-- For the web: Download the bundle and unzip it. Start a server on `localhost` and open a brower at that address. Starting a server can be done from the command line using [this project](https://github.com/iamtheblackunicorn/rins). If you have installed ***RINS***, change into the downloaded directory and run this command: `rins -s .`.
+- For the web: Download the bundle and unzip it. Start a server on `localhost` and open a browser at that address. Starting a server can be done from the command line using [this project](https://github.com/iamtheblackunicorn/rins). If you have installed ***RINS***, change into the downloaded directory and run this command: `rins -s .`.
 
 ## SUPPORTED PLATFORMS :computer:
 
@@ -47,7 +47,7 @@ Helply's supported platforms include the following:
 
 ## DISCLAIMER :warning:
 
-This product is a nearly-usable prototype, the architecture is identical to that of a usable product, however, the API pulled in for avialble facilities is a *"dummy"* API. (I'm doing this for a uni project.)
+This product is a nearly-usable prototype, the architecture is identical to that of a usable product. However, the API pulled in for available facilities is a *"dummy"* API. (I'm doing this for a uni project.)
 
 ## SCREENSHOTS :camera_flash:
 
@@ -91,7 +91,7 @@ After you have installed these tools, open a command prompt and type the followi
 ```bash
 $ flutter doctor
 ```
-If you do not get any errors, you're ready to rumble. Now you can execute these commands in a command prompt to build your exectuable for your platform.
+If you do not get any errors, you're ready to rumble. Now you can execute these commands in a command prompt to build your executable for your platform.
 
 - Get the source code:
 
