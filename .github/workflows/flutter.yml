@@ -1,5 +1,6 @@
 on: [push]
-build:
+jobs:
+  build:
     runs-on: ubuntu-latest
     name: Build and deploy a Flutter app.
     steps:
@@ -10,6 +11,6 @@ build:
         shell: bash
       #- name: Site deployment.
       #  uses: JamesIves/github-pages-deploy-action@v4.2.5
-      #  with:
-      #    branch: gh-pages
-       #   folder: build
+      # with:
+       #   branch: gh-pages
+        #  folder: build
