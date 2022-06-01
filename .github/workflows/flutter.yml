@@ -3,6 +3,7 @@
 # a.k.a. Angeldust Duke.
 # Licensed under the MIT license.
 
+name: Flutter Build CI
 on: [push]
 jobs:
   build:
