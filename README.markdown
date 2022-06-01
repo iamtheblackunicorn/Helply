@@ -4,6 +4,8 @@
 
 # HELPLY :peace_symbol: :tea:
 
+[![GitHub CI](https://github.com/iamtheblackunicorn/Helply/actions/workflows/flutter.yml/badge.svg)](https://github.com/iamtheblackunicorn/Helply/actions/)
+
 ***A small app to get refugess what they need.*** :peace_symbol: :tea:
 
 ## ABOUT :books:
