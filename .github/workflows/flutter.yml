@@ -14,8 +14,3 @@ jobs:
         name: Site compilation.
         run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.1-stable.tar.xz && tar xf flutter_linux_3.0.1-stable.tar.xz && ls && export PATH="$PATH:`pwd`/flutter/bin" && flutter -v && flutter config --no-analytics && rm -rf *.tar.xz && flutter build web && ls
         shell: bash
-      - name: Site deployment.
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
-        with:
-          branch: gh-pages
-          folder: build/web
