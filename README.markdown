@@ -123,6 +123,9 @@ $ flutter build macos
 
 # To compile for an Android device.
 $ flutter build apk
+
+# To compile for an iOS device.
+$ flutter build ios
 ```
 
 If you're compiling for Android, you will need a Java Keystore. You can generate this with this command:
